@@ -7,7 +7,7 @@ import {
   CursorArrowRaysIcon,
   ArrowRightIcon,
 } from "@heroicons/react/24/solid";
-import { ResumeItem } from "@/components";
+// import { ResumeItem } from "@/components";
 
 const RESUME_ITEMS = [
   {
@@ -49,11 +49,11 @@ export function Resume() {
             />
           </Button>
         </div>
-        <div className="col-span-1 grid gap-y-6 lg:ml-auto pr-0 lg:pr-12 xl:pr-32">
+        {/* <div className="col-span-1 grid gap-y-6 lg:ml-auto pr-0 lg:pr-12 xl:pr-32">
           {RESUME_ITEMS.map((props, idx) => (
             <ResumeItem key={idx} {...props} />
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

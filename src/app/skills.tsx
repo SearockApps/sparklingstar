@@ -9,7 +9,7 @@ import {
   EyeIcon,
   DocumentTextIcon,
 } from "@heroicons/react/24/solid";
-import { SkillCard } from "@/components";
+// import { SkillCard } from "@/components";
 
 const SKILLS = [
   {
@@ -69,11 +69,11 @@ export function Skills() {
           calling. Discover below how I can help you.
         </Typography>
       </div>
-      <div className="container mx-auto grid grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+      {/* <div className="container mx-auto grid grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
         {SKILLS.map((props, idx) => (
           <SkillCard key={idx} {...props} />
         ))}
-      </div>
+      </div> */}
     </section>
   );
 }
