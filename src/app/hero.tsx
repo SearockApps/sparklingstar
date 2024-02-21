@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Typography, Card } from "@material-tailwind/react";
+import { Button, Typography } from "@material-tailwind/react";
 
 function Hero() {
   return (
@@ -20,7 +20,7 @@ function Hero() {
           color="white"
           className="mt-6 mb-10 w-full md:max-w-full lg:max-w-3xl"
         >
-          Reputable and Experienced Team of Designers, Engineers, Project Managers and Reliable Manpower who offer Professional and Trustworthy service that exceeds every Client’s Expectations
+          Whether transforming indoor environments for optimal functionality or enhancing exteriors with captivating aesthetics, our team is dedicated to creating cohesive, inspiring spaces that reflect our clients&apos; visions and elevate the overall design experience.
         </Typography>
         <div>
           <Button variant="gradient" color="white">

@@ -18,7 +18,7 @@ function NavItem({ children, href }: NavItemProps) {
       <Typography
         as="a"
         href={href || "#"}
-        target={href ? "_blank" : "_self"}
+        target={href?.includes("#") ? "_self" : "_blank"}
         variant="small"
         className="font-medium"
       >
@@ -72,11 +72,11 @@ export function Navbar() {
             isScrolling ? "text-gray-900" : "text-white"
           }`}
         >
-          <NavItem>Home</NavItem>
-          <NavItem>About</NavItem>
-          <NavItem>Projects</NavItem>
-          <NavItem>Services</NavItem>
-          <NavItem>Contact</NavItem>
+          <NavItem href="#home">Home</NavItem>
+          <NavItem href="#about">About</NavItem>
+          <NavItem href="#projects">Projects</NavItem>
+          <NavItem href="#services">Services</NavItem>
+          <NavItem href="#contact">Contact</NavItem>
         </ul>
         <div className="hidden gap-2 lg:flex">
           <IconButton
@@ -122,11 +122,11 @@ export function Navbar() {
       <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-blue-gray-900">    
-            <NavItem>Home</NavItem>
-            <NavItem>About</NavItem>
-            <NavItem>Projects</NavItem>
-            <NavItem>Services</NavItem>
-            <NavItem>Contact</NavItem>
+            <NavItem href="#home">Home</NavItem>
+            <NavItem href="#about">About</NavItem>
+            <NavItem href="#projects">Projects</NavItem>
+            <NavItem href="#services">Services</NavItem>
+            <NavItem href="#contact">Contact</NavItem>
             <NavItem href="https://www.material-tailwind.com/blocks">
               Book an Appointment
             </NavItem>

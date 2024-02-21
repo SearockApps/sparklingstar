@@ -15,26 +15,33 @@ import Clients from "./clients";
 import Testimonial from "./testimonial";
 import PopularClients from "./popular-clients";
 import ContactForm from "./contact-form";
+import HeroText from "./hero-text";
+import OurServices from "./our-services";
+import OurApproach from "./our-approach";
+import OurStory from "./our-story";
 
 export default function Portfolio() {
   return (
     <>
       <Navbar />
       <Hero />
-      <Clients />
-      <CarouselFeatures />
-      <Testimonial />
+      <HeroText />
+      <OurServices />
+      <OurApproach />
+      <OurStory />
+      {/* <Clients /> */}
+      {/* <CarouselFeatures /> */}
+      {/* <Testimonial /> */}
       {/* <Skills /> */}
       {/* <Projects /> */}
       {/* <Resume /> */}
-      {/* <Testimonial />
-      <PopularClients />
+      {/* <PopularClients /> */}
       <ContactForm />
-      <OnlineCourse />
-      <WhyChooseUs />
+      {/* <OnlineCourse /> */}
+      {/* <WhyChooseUs /> */}
       
-      <Pricing />
-      <OtherCourses /> */}
+      {/* <Pricing /> */}
+      {/* <OtherCourses /> */}
       <Footer />
     </>
   );
