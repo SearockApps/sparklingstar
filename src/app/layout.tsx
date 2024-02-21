@@ -1,19 +1,24 @@
 /* eslint-disable @next/next/next-script-for-ga */
 import "./globals.css";
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Roboto, Inter } from "next/font/google";
 import { Layout } from "@/components";
 
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "700", "900"],
+  weight: ["100", "400", "500", "700", "900"],
   display: "swap",
 });
 
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["100", "400", "500", "700", "900"],
+})
+
 export const metadata: Metadata = {
-  title: "Next.js + Tailwind Portfolio Page",
+  title: "Sparkling Star",
   description:
-    "Introducing Tailwind Portfolio Page, a versatile and stylish portfolio template built on the foundation of Tailwind CSS and Material Tailwind.",
+    "We are Interior Design & Fit-out company, passionate about creating exceptional spaces that inspire and delight. With a commitment to design excellence and unparalleled customer service, we transform houses into homes and commercial spaces into captivating environments.",
 };
 
 export default function RootLayout({
@@ -24,14 +29,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
-          defer
-          data-site="YOUR_DOMAIN_HERE"
-          src="https://api.nepcha.com/js/nepcha-analytics.js"
-        ></script>
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       </head>
-      <body className={roboto.className}>
+      <body id="home" className={inter.className}>
         <Layout>
           {children}
         </Layout>

@@ -11,10 +11,11 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { EnvelopeIcon, PhoneIcon, TicketIcon } from "@heroicons/react/24/solid";
+import Services from "./Constants";
 
 export function ContactForm() {
   return (
-    <section className="px-8 py-16">
+    <section id="contact" className="px-8 py-16">
       <div className="container mx-auto mb-20 text-center">
         <Typography variant="h1" color="blue-gray" className="mb-4">
           Contact Us
@@ -119,18 +120,15 @@ export function ContactForm() {
                 </Typography>
                 <div className="-ml-3 mb-14 ">
                   {/* @ts-ignore */}
-                  <Radio
-                    color="gray"
-                    name="type"
-                    label="Design"
-                    defaultChecked
-                  />
-                  {/* @ts-ignore */}
-                  <Radio color="gray" name="type" label="Development" />
-                  {/* @ts-ignore */}
-                  <Radio color="gray" name="type" label="Support" />
-                  {/* @ts-ignore */}
-                  <Radio color="gray" name="type" label="Other" />
+                  {Services.map(({ name }) => (
+                    <Radio
+                      key={name}
+                      color="gray"
+                      name="type"
+                      label={name}
+                      crossOrigin={name}
+                    />
+                  ))}
                 </div>
                 {/* @ts-ignore */}
                 <Textarea
