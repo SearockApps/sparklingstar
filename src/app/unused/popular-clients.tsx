@@ -2,15 +2,7 @@
 
 import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
-
-const CLIENTS = [
-  "coinbase",
-  "spotify",
-  "pinterest",
-  "google",
-  "amazon",
-  "netflix",
-];
+import { Constants } from "../constants";
 
 export function PopularClients() {
   return (
@@ -25,7 +17,7 @@ export function PopularClients() {
           </Typography>
         </div>
         <div className="flex flex-wrap items-center justify-center gap-6 mt-8">
-          {CLIENTS.map((logo, key) => (
+          {Constants.clients.map((logo, key) => (
             <Image
               key={key}
               alt={logo}

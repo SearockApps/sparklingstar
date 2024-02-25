@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
-import { Constants } from "../Constants";
+import { constants } from "../constants";
 
 export function Clients() {
   return (
@@ -12,7 +12,7 @@ export function Clients() {
           Our clients
         </Typography>
         <div className="flex flex-wrap items-center justify-center gap-6">
-          {Constants.clients.map((logo, key) => (
+          {constants.clients.map((logo, key) => (
             <Image
               key={key}
               alt={logo}

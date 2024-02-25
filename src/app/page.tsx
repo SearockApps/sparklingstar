@@ -5,7 +5,7 @@ import { Navbar, Footer } from "@/components";
 import Hero from "./home/hero";
 import OnlineCourse from "./unused/online-course";
 import WhyChooseUs from "./unused/why-choose-us";
-import CarouselFeatures from "./unused/carousel-features";
+import CarouselFeatures from "./home/carousel-features";
 import Pricing from "./unused/pricing";
 import OtherCourses from "./unused/other-courses";
 import Clients from "./clients/clients";
@@ -19,6 +19,7 @@ import HeroText from "./home/hero-text";
 import OurServices from "./home/our-services";
 import OurApproach from "./home/our-approach";
 import OurStory from "./home/our-story";
+import { CarouselSlides } from "@/components/carousel-slides";
 
 export default function Portfolio() {
   return (
@@ -31,6 +32,7 @@ export default function Portfolio() {
       <OurStory />
       {/* <Clients /> */}
       {/* <CarouselFeatures /> */}
+      <CarouselSlides />
       {/* <Testimonial /> */}
       {/* <Skills /> */}
       {/* <Projects /> */}

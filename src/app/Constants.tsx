@@ -40,7 +40,42 @@ const clients = [
   "netflix",
 ];
 
+interface Slide { 
+  id: number;
+  title: string; 
+  description: string; 
+  name: string; 
+  position: string; 
+  company: string;
+  image: string;
+  imageAlt: string; 
+} 
+
+const testmonials: Slide[] = [
+  {
+    id: 1,
+    title: "Easy Shopping, Quick Delivery",
+    description: "No need to stress about shopping for books. Order online and have your textbooks and supplies delivered straight to your doorstep for free.",
+    name: "Louis Miriam",
+    position: "Web Developer",
+    company: "AMAZON INC",
+    image: "image/logos/logo-amazon 3.svg",
+    imageAlt: "testimonial"
+  },
+  {
+    id: 2,
+    title: "Easy Shopping, Quick Delivery",
+    description: "No need to stress about shopping for books. Order online and have your textbooks and supplies delivered straight to your doorstep for free.",
+    name: "Sanjeev Chavan",
+    position: "iOS Developer",
+    company: "AMAZON INC",
+    image: "image/logos/logo-amazon 3.svg",
+    imageAlt: "testimonial"
+  }
+]
+
 export const Constants = {
   services,
-  clients
+  clients,
+  testmonials
 }
