@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
-import Services from "./Constants";
+import { Constants } from "../Constants";
 
 export function OurServices() {
   return (
@@ -33,7 +33,7 @@ export function OurServices() {
           </Typography>
 
           <div className="col-span-2 grid grid-cols-1 gap-3 sm:grid-cols-2 ">
-            {Services.map(({ name }) => (
+            {Constants.services.map(({ name }) => (
               <h1 key={name}>{name}</h1>
             ))}
           </div>

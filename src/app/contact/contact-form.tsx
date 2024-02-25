@@ -11,7 +11,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { EnvelopeIcon, PhoneIcon, TicketIcon } from "@heroicons/react/24/solid";
-import Services from "./Constants";
+import { Constants } from "../Constants";
 
 export function ContactForm() {
   return (
@@ -120,7 +120,7 @@ export function ContactForm() {
                 </Typography>
                 <div className="-ml-3 mb-14 ">
                   {/* @ts-ignore */}
-                  {Services.map(({ name }) => (
+                  {Constants.services.map(({ name }) => (
                     <Radio
                       key={name}
                       color="gray"

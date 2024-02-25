@@ -1,4 +1,4 @@
-const Services = [
+const services = [
   {
     name: "1. Residential Interior & Exterior Design",
   },
@@ -31,4 +31,16 @@ const Services = [
   },
 ];
 
-export default Services;
+const clients = [
+  "coinbase",
+  "spotify",
+  "pinterest",
+  "google",
+  "amazon",
+  "netflix",
+];
+
+export const Constants = {
+  services,
+  clients
+}

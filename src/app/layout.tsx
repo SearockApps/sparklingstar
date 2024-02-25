@@ -10,11 +10,6 @@ const roboto = Roboto({
   display: "swap",
 });
 
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["100", "400", "500", "700", "900"],
-})
-
 export const metadata: Metadata = {
   title: "Sparkling Star",
   description:
@@ -31,7 +26,7 @@ export default function RootLayout({
       <head>
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       </head>
-      <body id="home" className={inter.className}>
+      <body id="home" className={roboto.className}>
         <Layout>
           {children}
         </Layout>
