@@ -19,10 +19,10 @@ export function OurServices() {
           />
         </div>
         <div className="col-span-2 lg:pl-24">
-          <Typography variant="h2" color="blue-gray" className="mb-4">
+          <Typography placeholder="test" variant="h2" color="blue-gray" className="mb-4">
             Our Services
           </Typography>
-          <Typography
+          <Typography placeholder="test"
             variant="lead"
             className="mb-5 max-w-lg px-4 text-left text-lg !text-gray-500 lg:px-0  "
           >

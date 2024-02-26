@@ -15,7 +15,7 @@ interface NavItemProps {
 function NavItem({ children, href }: NavItemProps) {
   return (
     <li>
-      <Typography
+      <Typography placeholder="test"
         as="a"
         href={href || "#"}
         target={href?.includes("/")  ? "_self" : "_blank"}
@@ -64,7 +64,7 @@ export function Navbar() {
       className="fixed top-0 z-50 border-0"
     >
       <div className="container mx-auto flex items-center justify-between">
-        <Typography variant="h6" color={isScrolling ? "blue-gray" : "white"}>
+        <Typography placeholder="test" variant="h6" color={isScrolling ? "blue-gray" : "white"}>
           Sparkling Star
         </Typography>
         <ul
@@ -74,7 +74,7 @@ export function Navbar() {
         >
           <NavItem href="/">Home</NavItem>
           <NavItem href="/about">About</NavItem>
-          <NavItem href="/projects">Showcase</NavItem>
+          <NavItem href="/showcase">Showcase</NavItem>
           <NavItem href="/contact">Contact</NavItem>
         </ul>
         <div className="hidden gap-2 lg:flex">
@@ -100,7 +100,7 @@ export function Navbar() {
             <i className="fa-brands fa-instagram text-base" />
           </IconButton>
           <a href="/contact" target="_self">
-            <Button color={isScrolling ? "gray" : "white"} size="sm">
+            <Button placeholder="test" color={isScrolling ? "gray" : "white"} size="sm">
               Book an Appointment
             </Button>
           </a>
@@ -123,24 +123,24 @@ export function Navbar() {
           <ul className="flex flex-col gap-4 text-blue-gray-900">    
             <NavItem href="/">Home</NavItem>
             <NavItem href="/about">About</NavItem>
-            <NavItem href="/projects">Showcase</NavItem>
+            <NavItem href="/showcase">Showcase</NavItem>
             <NavItem href="/contact">Contact</NavItem>
             <NavItem href="/contact">
               Book an Appointment
             </NavItem>
           </ul>
           <div className="mt-4 flex gap-2">
-            <IconButton variant="text" color="gray" size="sm">
+            <IconButton placeholder="test" variant="text" color="gray" size="sm">
               <i className="fa-brands fa-twitter text-base" />
             </IconButton>
-            <IconButton variant="text" color="gray" size="sm">
+            <IconButton placeholder="test" variant="text" color="gray" size="sm">
               <i className="fa-brands fa-facebook text-base" />
             </IconButton>
-            <IconButton variant="text" color="gray" size="sm">
+            <IconButton placeholder="test" variant="text" color="gray" size="sm">
               <i className="fa-brands fa-instagram text-base" />
             </IconButton>
             <a href="/contact" target="_self">
-              <Button color="gray" size="sm" className="ml-auto">
+              <Button placeholder="test" color="gray" size="sm" className="ml-auto">
               Book an Appointment
               </Button>
             </a>

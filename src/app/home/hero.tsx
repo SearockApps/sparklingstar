@@ -14,14 +14,14 @@ function Hero() {
     <div className="absolute inset-0 h-full w-full bg-gray-900/60" />
     <div className="grid min-h-screen px-8">
       <div className="container relative z-10 my-auto mx-auto grid place-items-center text-center">
-        <Typography
+        <Typography placeholder="test"
           variant="h1"
           color="white"
           className="md:max-w-full lg:max-w-3xl"
         >
           Redefine your workspace
         </Typography>
-        <Typography
+        <Typography placeholder="test"
           variant="lead"
           color="white"
           className="mt-6 mb-10 w-full md:max-w-full lg:max-w-3xl"
@@ -29,7 +29,7 @@ function Hero() {
           Whether transforming indoor environments for optimal functionality or enhancing exteriors with captivating aesthetics, our team is dedicated to creating cohesive, inspiring spaces that reflect our clients&apos; visions and elevate the overall design experience.
         </Typography>
         <div>
-          <Button variant="gradient" color="white">
+          <Button placeholder="test" variant="gradient" color="white">
             Book an Appointment today
           </Button>
         </div>

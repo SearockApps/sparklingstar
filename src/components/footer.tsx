@@ -25,12 +25,12 @@ export function Footer() {
           <div className="flex col-span-2 items-center gap-10 mb-10 lg:mb-0 md:gap-36">
             {LINKS.map(({ title, items }) => (
               <ul key={title}>
-                <Typography variant="h6" color="blue-gray" className="mb-4">
+                <Typography placeholder="test" variant="h6" color="blue-gray" className="mb-4">
                   {title}
                 </Typography>
                 {items.map((link) => (
                   <li key={link}>
-                    <Typography
+                    <Typography placeholder="test"
                       as="a"
                       href="#"
                       className="py-1 font-normal !text-gray-700 transition-colors hover:!text-gray-900"
@@ -43,10 +43,10 @@ export function Footer() {
             ))}
           </div>
           <div className="">
-            <Typography variant="h6" className="mb-3 text-left">
+            <Typography placeholder="test" variant="h6" className="mb-3 text-left">
               Sparkling Star
             </Typography>
-            <Typography className="!text-gray-500 font-normal mb-4 text-base">
+            <Typography placeholder="test" className="!text-gray-500 font-normal mb-4 text-base">
               Get in touch with our team, quick!
             </Typography>
             <div className="flex mb-3 flex-col lg:flex-row items-start gap-4">
@@ -54,7 +54,7 @@ export function Footer() {
                 {/* @ts-ignore */}
                 <Input label="Email" color="gray" />
               </div>
-              <Button color="gray" className="w-full lg:w-fit" size="md">
+              <Button placeholder="test" color="gray" className="w-full lg:w-fit" size="md">
                 Send
               </Button>
             </div>

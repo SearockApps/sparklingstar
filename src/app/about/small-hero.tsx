@@ -20,7 +20,7 @@ function SmallHero({ title, height }: SmallHeroProps) {
     <div className="absolute inset-0 bg-gray-900/60" />
     <div className="grid min-h-screen px-8">
       <div className="container relative z-10 my-auto mx-auto grid place-items-center text-center">
-        <Typography
+        <Typography placeholder="test"
           variant="h1"
           color="white"
           className="md:max-w-full lg:max-w-3xl"
