@@ -8,7 +8,7 @@ export function OurStory() {
   return (
     <section className="py-28 px-8">
       <div className="container mx-auto grid grid-cols-1 place-items-center lg:grid-cols-3">
-        <div className="col-span-2 lg:pl-24">
+        <div className="col-span-2">
           <Typography variant="h1" color="blue-gray" className="mb-4">
           Our Story
           </Typography>

@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/next-script-for-ga */
 import "./globals.css";
 import type { Metadata } from "next";
-import { Roboto, Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 import { Layout } from "@/components";
 
 const roboto = Roboto({

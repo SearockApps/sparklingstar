@@ -3,15 +3,15 @@ import { Typography, Button, Input } from "@material-tailwind/react";
 const LINKS = [
   {
     title: "Company",
-    items: ["About Us", "Careers", "Premium Tools", "Blog"],
+    items: ["About Us", "Blog", "Contact"],
   },
   {
     title: "Pages",
-    items: ["Login", "Register", "Add List", "Contact"],
+    items: ["Login", "Register", "Contact"],
   },
   {
     title: "Legal",
-    items: ["Terms", "Privacy", "Team", "About Us"],
+    items: ["Terms", "Privacy", "Team"],
   },
 ];
 
@@ -44,14 +44,10 @@ export function Footer() {
           </div>
           <div className="">
             <Typography variant="h6" className="mb-3 text-left">
-              Subscribe
+              Sparkling Star
             </Typography>
             <Typography className="!text-gray-500 font-normal mb-4 text-base">
-              Get access to subscriber exclusive deals and be the first who gets
-              informed about fresh sales.
-            </Typography>
-            <Typography variant="small" className="font-medium mb-2 text-left">
-              Your Email
+              Get in touch with our team, quick!
             </Typography>
             <div className="flex mb-3 flex-col lg:flex-row items-start gap-4">
               <div className="w-full">
@@ -59,7 +55,7 @@ export function Footer() {
                 <Input label="Email" color="gray" />
               </div>
               <Button color="gray" className="w-full lg:w-fit" size="md">
-                button
+                Send
               </Button>
             </div>
           </div>
