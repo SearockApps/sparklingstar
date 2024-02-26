@@ -38,4 +38,3 @@ next-env.d.ts
 
 # misc
 .vscode
-pnpm-lock.yaml
