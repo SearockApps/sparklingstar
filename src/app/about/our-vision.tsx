@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
+import { Constants } from "../Constants";
 
 export function OurVision() {
   return (
@@ -16,7 +17,7 @@ export function OurVision() {
             variant="lead"
             className="mb-5 px-4 text-left lg:px-0  "
           >
-            Our vision is to be the premier provider of holistic design and construction services, seamlessly integrating interior and exterior elements to create immersive, transformative experiences. We envision a future where our innovative solutions blur the lines between indoor and outdoor living, blurring boundaries and fostering a deeper connection to nature and community. By embracing cutting-edge technologies, sustainable practices, and a culture of continuous improvement, we aspire to shape environments that inspire, rejuvenate, and endure for generations to come, leaving a lasting legacy of beauty, functionality, and wellbeing.
+            {Constants.ourVision}
           </Typography>
         </div>
         <div className="col-span-1 rounded-xl lg:mb-0 mb-12">

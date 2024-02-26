@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
+import { Constants } from "../Constants";
 
 export function OurMission() {
   return (
@@ -26,7 +27,7 @@ export function OurMission() {
       variant="lead"
       className="mb-5 text-left lg:px-0  "
     >
-      Our mission is to create seamless transitions between interior and exterior spaces, crafting cohesive environments that harmonize with their surroundings and enrich the lives of those who inhabit them. Through innovative design, superior craftsmanship, and a deep understanding of our clients' needs, we strive to deliver integrated interior and exterior solutions that inspire, rejuvenate, and connect people with the natural world. With a commitment to sustainability, creativity, and excellence, we aim to exceed expectations and leave a positive impact on communities and environments alike.
+      {Constants.ourMission}
     </Typography>
   </div>
 </div>
