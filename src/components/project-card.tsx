@@ -30,11 +30,11 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
           href="#"
           className="text-blue-gray-900 transition-colors hover:text-gray-800"
         >
-          <Typography variant="h5" className="mb-2">
+          <Typography placeholder="test" variant="h5" className="mb-2">
             {title}
           </Typography>
         </a>
-        <Typography className="mb-6 font-normal !text-gray-500">
+        <Typography placeholder="test" className="mb-6 font-normal !text-gray-500">
           {desc}
         </Typography>
         <Button color="gray" size="sm">

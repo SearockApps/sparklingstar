@@ -33,7 +33,7 @@ export function CarouselSlides() {
               className="!relative flex grid-cols-1 flex-col-reverse gap-6 px-10 py-14 md:grid md:grid-cols-5  md:gap-14 md:py-20"
             >
               <div className="col-span-3 flex flex-col items-start justify-center">
-                <Typography
+                <Typography placeholder="test"
                   variant="lead"
                   color="white"
                   className="mb-5 text-xl font-normal "
@@ -41,7 +41,7 @@ export function CarouselSlides() {
                   {item.title} <br />
                   {item.description}
                 </Typography>
-                <Typography
+                <Typography placeholder="test"
                   variant="small"
                   color="white"
                   className="font-medium uppercase"

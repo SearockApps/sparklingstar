@@ -15,7 +15,7 @@ interface NavItemProps {
 function NavItem({ children, href }: NavItemProps) {
   return (
     <li>
-      <Typography
+      <Typography placeholder="test"
         as="a"
         href={href || "#"}
         target={href?.includes("/")  ? "_self" : "_blank"}
@@ -64,7 +64,7 @@ export function Navbar() {
       className="fixed top-0 z-50 border-0"
     >
       <div className="container mx-auto flex items-center justify-between">
-        <Typography variant="h6" color={isScrolling ? "blue-gray" : "white"}>
+        <Typography placeholder="test" variant="h6" color={isScrolling ? "blue-gray" : "white"}>
           Sparkling Star
         </Typography>
         <ul

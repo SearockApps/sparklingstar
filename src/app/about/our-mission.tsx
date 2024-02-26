@@ -21,8 +21,7 @@ export function OurMission() {
 
   <div className="col-span-2 px-8">
     <Typography placeholder={Constants.ourMissionTitle} variant="h1" color="blue-gray" className="mb-4">{Constants.ourMissionTitle}</Typography>
-    <Typography
-      placeholder="Constants.ourMission"
+    <Typography placeholder="test"
       variant="lead"
       className="mb-5 text-left lg:px-0"
     >
