@@ -1,10 +1,16 @@
 "use client";
 
 import { Button, Typography } from "@material-tailwind/react";
+import { Constants } from "../constants";
 
 function Hero() {
+  const bgImageName = Constants.banners[Math.floor(Math.random()*Constants.banners.length)]
   return (
-    <div className="relative min-h-screen w-full bg-[url('/image/banners/01.jpeg')] bg-cover bg-no-repeat">
+    <div style={{
+      backgroundImage: `url(/${bgImageName})`,
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat"
+    }} className="relative min-h-screen w-full">
     <div className="absolute inset-0 h-full w-full bg-gray-900/60" />
     <div className="grid min-h-screen px-8">
       <div className="container relative z-10 my-auto mx-auto grid place-items-center text-center">

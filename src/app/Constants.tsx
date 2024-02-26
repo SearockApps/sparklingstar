@@ -1,3 +1,16 @@
+function print(s: String) {
+  console.log(s)
+}
+
+const banners = [
+  'image/banners/01.jpeg',
+  'image/banners/02.jpeg', 
+  'image/banners/03.jpeg',
+  'image/banners/04.jpeg',
+  'image/banners/05.jpeg',
+  'image/banners/06.jpeg'
+];
+
 const services = [
   {
     name: "1. Residential Interior & Exterior Design",
@@ -77,5 +90,6 @@ const testmonials: Slide[] = [
 export const Constants = {
   services,
   clients,
-  testmonials
+  testmonials,
+  banners
 }

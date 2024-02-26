@@ -27,7 +27,7 @@ export default function Portfolio() {
       <Navbar />
       <Hero />
       <HeroText />
-      <OurServices />
+      {/* <OurServices /> */}
       <OurApproach />
       <OurStory />
       {/* <Clients /> */}
