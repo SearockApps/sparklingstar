@@ -2,46 +2,20 @@
 import { Navbar, Footer } from "@/components";
 
 // sections
-import Hero from "./hero";
-import OnlineCourse from "./online-course";
-import WhyChooseUs from "./why-choose-us";
-import CarouselFeatures from "./carousel-features";
-import Pricing from "./pricing";
-import OtherCourses from "./other-courses";
-import Clients from "./clients";
-// import Skills from "./skills";
-// import Projects from "./projects";
-// import Resume from "./resume";
-import Testimonial from "./testimonial";
-import PopularClients from "./popular-clients";
-import ContactForm from "./contact-form";
-import HeroText from "./hero-text";
-import OurServices from "./our-services";
-import OurApproach from "./our-approach";
-import OurStory from "./our-story";
+import Hero from "./home/hero";
+import ContactForm from "./contact/contact-form";
+import HeroText from "./home/hero-text";
+import OurApproach from "./home/our-approach";
+import OurStory from "./home/our-story";
+import { CarouselSlides } from "@/components/carousel-slides";
 
 export default function Portfolio() {
   return (
     <>
       <Navbar />
       <Hero />
-      <HeroText />
-      <OurServices />
       <OurApproach />
-      <OurStory />
-      {/* <Clients /> */}
-      {/* <CarouselFeatures /> */}
-      {/* <Testimonial /> */}
-      {/* <Skills /> */}
-      {/* <Projects /> */}
-      {/* <Resume /> */}
-      {/* <PopularClients /> */}
-      <ContactForm />
-      {/* <OnlineCourse /> */}
-      {/* <WhyChooseUs /> */}
-      
-      {/* <Pricing /> */}
-      {/* <OtherCourses /> */}
+      <CarouselSlides />
       <Footer />
     </>
   );

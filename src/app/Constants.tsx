@@ -1,4 +1,17 @@
-const Services = [
+function print(s: String) {
+  console.log(s)
+}
+
+const banners = [
+  'image/banners/01.jpeg',
+  'image/banners/02.jpeg', 
+  'image/banners/03.jpeg',
+  'image/banners/04.jpeg',
+  'image/banners/05.jpeg',
+  'image/banners/06.jpeg'
+];
+
+const services = [
   {
     name: "1. Residential Interior & Exterior Design",
   },
@@ -31,4 +44,52 @@ const Services = [
   },
 ];
 
-export default Services;
+const clients = [
+  "coinbase",
+  "spotify",
+  "pinterest",
+  "google",
+  "amazon",
+  "netflix",
+];
+
+interface Slide { 
+  id: number;
+  title: string; 
+  description: string; 
+  name: string; 
+  position: string; 
+  company: string;
+  image: string;
+  imageAlt: string; 
+} 
+
+const testmonials: Slide[] = [
+  {
+    id: 1,
+    title: "Easy Shopping, Quick Delivery",
+    description: "No need to stress about shopping for books. Order online and have your textbooks and supplies delivered straight to your doorstep for free.",
+    name: "Louis Miriam",
+    position: "Web Developer",
+    company: "AMAZON INC",
+    image: "image/logos/logo-amazon 3.svg",
+    imageAlt: "testimonial"
+  },
+  {
+    id: 2,
+    title: "Easy Shopping, Quick Delivery",
+    description: "No need to stress about shopping for books. Order online and have your textbooks and supplies delivered straight to your doorstep for free.",
+    name: "Sanjeev Chavan",
+    position: "iOS Developer",
+    company: "AMAZON INC",
+    image: "image/logos/logo-amazon 3.svg",
+    imageAlt: "testimonial"
+  }
+]
+
+export const Constants = {
+  services,
+  clients,
+  testmonials,
+  banners
+}

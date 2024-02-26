@@ -18,7 +18,7 @@ function NavItem({ children, href }: NavItemProps) {
       <Typography
         as="a"
         href={href || "#"}
-        target={href?.includes("#") ? "_self" : "_blank"}
+        target={href?.includes("/")  ? "_self" : "_blank"}
         variant="small"
         className="font-medium"
       >
@@ -72,11 +72,9 @@ export function Navbar() {
             isScrolling ? "text-gray-900" : "text-white"
           }`}
         >
-          <NavItem href="#home">Home</NavItem>
-          <NavItem href="#about">About</NavItem>
-          <NavItem href="#projects">Projects</NavItem>
-          <NavItem href="#services">Services</NavItem>
-          <NavItem href="#contact">Contact</NavItem>
+          <NavItem href="/">Home</NavItem>
+          <NavItem href="/about">About</NavItem>
+          <NavItem href="/contact">Contact</NavItem>
         </ul>
         <div className="hidden gap-2 lg:flex">
           <IconButton
@@ -100,7 +98,7 @@ export function Navbar() {
           >
             <i className="fa-brands fa-instagram text-base" />
           </IconButton>
-          <a href="https://www.material-tailwind.com/blocks" target="_blank">
+          <a href="/contact" target="_self">
             <Button color={isScrolling ? "gray" : "white"} size="sm">
               Book an Appointment
             </Button>
@@ -122,12 +120,10 @@ export function Navbar() {
       <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-blue-gray-900">    
-            <NavItem href="#home">Home</NavItem>
-            <NavItem href="#about">About</NavItem>
-            <NavItem href="#projects">Projects</NavItem>
-            <NavItem href="#services">Services</NavItem>
-            <NavItem href="#contact">Contact</NavItem>
-            <NavItem href="https://www.material-tailwind.com/blocks">
+            <NavItem href="/">Home</NavItem>
+            <NavItem href="/about">About</NavItem>
+            <NavItem href="/contact">Contact</NavItem>
+            <NavItem href="/contact">
               Book an Appointment
             </NavItem>
           </ul>
@@ -141,7 +137,7 @@ export function Navbar() {
             <IconButton variant="text" color="gray" size="sm">
               <i className="fa-brands fa-instagram text-base" />
             </IconButton>
-            <a href="https://www.material-tailwind.com/blocks" target="_blank">
+            <a href="/contact" target="_self">
               <Button color="gray" size="sm" className="ml-auto">
               Book an Appointment
               </Button>

@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/next-script-for-ga */
 import "./globals.css";
 import type { Metadata } from "next";
-import { Roboto, Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 import { Layout } from "@/components";
 
 const roboto = Roboto({
@@ -9,11 +9,6 @@ const roboto = Roboto({
   weight: ["100", "400", "500", "700", "900"],
   display: "swap",
 });
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["100", "400", "500", "700", "900"],
-})
 
 export const metadata: Metadata = {
   title: "Sparkling Star",
@@ -31,7 +26,7 @@ export default function RootLayout({
       <head>
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       </head>
-      <body id="home" className={inter.className}>
+      <body id="home" className={roboto.className}>
         <Layout>
           {children}
         </Layout>

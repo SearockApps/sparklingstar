@@ -6,6 +6,9 @@ const config: Config = withMT({
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  fontFamily: {
+    'playfair-display': ['var(--font-playfair-display)', 'serif'],
+  },
   theme: {},
   plugins: [],
 });
