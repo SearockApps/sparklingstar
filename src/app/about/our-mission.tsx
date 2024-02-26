@@ -20,9 +20,7 @@ export function OurMission() {
   </div>
 
   <div className="col-span-2 px-8">
-    <Typography variant="h2" color="blue-gray" className="mb-4">
-    Mission Statement:
-    </Typography>
+    <Typography variant="h1" color="blue-gray" className="mb-4">{Constants.ourMissionTitle}</Typography>
     <Typography
       variant="lead"
       className="mb-5 text-left lg:px-0  "

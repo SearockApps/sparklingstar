@@ -10,9 +10,7 @@ export function OurVision() {
     <section className="py-28">
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-3">
         <div className="col-span-2 px-8">
-          <Typography variant="h2" color="blue-gray" className="mb-4">
-          Vision Statement:
-          </Typography>
+          <Typography variant="h2" color="blue-gray" className="mb-4">{Constants.ourVisionTitle}</Typography>
           <Typography
             variant="lead"
             className="mb-5 px-4 text-left lg:px-0  "
