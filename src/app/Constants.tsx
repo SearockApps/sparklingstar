@@ -1,7 +1,3 @@
-function print(s: String) {
-  console.log(s)
-}
-
 const banners = [
   'image/banners/01.jpeg',
   'image/banners/02.jpeg', 

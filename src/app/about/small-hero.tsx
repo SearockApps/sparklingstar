@@ -1,7 +1,7 @@
 "use client";
 
 import { Typography } from "@material-tailwind/react";
-import { Constants } from "../constants";
+import { Constants } from "../Constants";
 
 interface SmallHeroProps {
   title: string;

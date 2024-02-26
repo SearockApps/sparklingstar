@@ -11,7 +11,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { EnvelopeIcon, PhoneIcon, TicketIcon } from "@heroicons/react/24/solid";
-import { Constants } from "../constants";
+import { Constants } from "../Constants";
 
 export function ContactForm() {
   return (

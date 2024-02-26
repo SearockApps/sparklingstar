@@ -9,7 +9,6 @@ import { Constants } from "@/app/Constants";
 export function CarouselSlides() {
     return (<section className="px-8 pt-40 pb-20">
         <div className="container mx-auto bg-black py-10 lg:px-16">
-        {/* !rounded-lg bg-[url('/image/Background.png')] bg-center */}
         <Carousel
           transition={{ duration: 1 }}
           nextArrow={() => <></>}
