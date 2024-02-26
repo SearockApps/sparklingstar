@@ -74,7 +74,7 @@ export function Navbar() {
         >
           <NavItem href="/">Home</NavItem>
           <NavItem href="/about">About</NavItem>
-          <NavItem href="/projects">Showcase</NavItem>
+          <NavItem href="/showcase">Showcase</NavItem>
           <NavItem href="/contact">Contact</NavItem>
         </ul>
         <div className="hidden gap-2 lg:flex">
@@ -123,7 +123,7 @@ export function Navbar() {
           <ul className="flex flex-col gap-4 text-blue-gray-900">    
             <NavItem href="/">Home</NavItem>
             <NavItem href="/about">About</NavItem>
-            <NavItem href="/projects">Showcase</NavItem>
+            <NavItem href="/showcase">Showcase</NavItem>
             <NavItem href="/contact">Contact</NavItem>
             <NavItem href="/contact">
               Book an Appointment
