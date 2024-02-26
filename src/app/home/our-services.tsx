@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
-import { Constants } from "../constants";
+import { Constants } from "../Constants";
 
 export function OurServices() {
   return (

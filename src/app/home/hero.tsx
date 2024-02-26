@@ -1,7 +1,7 @@
 "use client";
 
 import { Button, Typography } from "@material-tailwind/react";
-import { Constants } from "../constants";
+import { Constants } from "../Constants";
 
 function Hero() {
   const bgImageName = Constants.banners[Math.floor(Math.random()*Constants.banners.length)]
