@@ -20,6 +20,7 @@ export function CarouselFeatures() {
       </div>
       <div className="container mx-auto !rounded-lg bg-[url('/image/Background.png')] bg-center py-10 lg:px-16">
         <Carousel
+          placeholder="test"
           transition={{ duration: 1 }}
           nextArrow={() => <></>}
           prevArrow={() => <></>}

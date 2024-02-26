@@ -22,8 +22,8 @@ export function Testimonial() {
             with me. My client&apos;s satisfaction is my greatest achievement!
           </Typography>
         </div>
-        <Card color="transparent" shadow={false} className="py-8 lg:flex-row">
-          <CardBody className="w-full lg:gap-10 h-full lg:!flex justify-between ">
+        <Card placeholder="test" color="transparent" shadow={false} className="py-8 lg:flex-row">
+          <CardBody placeholder="test" className="w-full lg:gap-10 h-full lg:!flex justify-between ">
             <div className="w-full mb-10 lg:mb-0">
               <Typography placeholder="test"
                 variant="h3"
@@ -48,6 +48,7 @@ export function Testimonial() {
               </Typography>
               <div className="flex items-center gap-4">
                 <Avatar
+                  placeholder="test"
                   variant="rounded"
                   src="/image/avatar1.jpg"
                   alt="spotify"
@@ -59,6 +60,7 @@ export function Testimonial() {
                 />
                 <div className="w-[1px] h-[36px] bg-blue-gray-100 "></div>
                 <Avatar
+                  placeholder="test"
                   variant="rounded"
                   src="/image/avatar2.jpg"
                   alt="spotify"
@@ -70,6 +72,7 @@ export function Testimonial() {
                 />
                 <div className="w-[1px] h-[36px] bg-blue-gray-100" />
                 <Avatar
+                  placeholder="test"
                   variant="rounded"
                   src="/image/avatar3.jpg"
                   alt="spotify"

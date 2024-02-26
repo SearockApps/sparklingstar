@@ -24,8 +24,8 @@ export function Pricing() {
             will send you a full refund.
           </Typography>
         </div>
-        <Card className="px-6 pb-5">
-          <CardBody>
+        <Card placeholder="test" className="px-6 pb-5">
+          <CardBody placeholder="test">
             <Typography placeholder="test" variant="h3" color="blue-gray">
               React Course Membership
             </Typography>
@@ -69,7 +69,7 @@ export function Pricing() {
                 <Typography placeholder="test" variant="h1" color="blue-gray">
                   $399
                 </Typography>
-                <Button color="gray" className="my-3">
+                <Button placeholder="test" color="gray" className="my-3">
                   get access
                 </Button>
                 <Typography placeholder="test"

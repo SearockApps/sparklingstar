@@ -9,6 +9,7 @@ export function ResumeItem({ icon: Icon, children }: ResumeItemProps) {
   return (
     <div className="flex items-start gap-4">
       <Card
+        placeholder="test"
         color="gray"
         className="h-12 w-12 shrink-0 items-center justify-center !rounded-lg"
       >

@@ -54,7 +54,7 @@ export function Footer() {
                 {/* @ts-ignore */}
                 <Input label="Email" color="gray" />
               </div>
-              <Button color="gray" className="w-full lg:w-fit" size="md">
+              <Button placeholder="test" color="gray" className="w-full lg:w-fit" size="md">
                 Send
               </Button>
             </div>

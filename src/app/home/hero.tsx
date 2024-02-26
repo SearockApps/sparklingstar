@@ -29,7 +29,7 @@ function Hero() {
           Whether transforming indoor environments for optimal functionality or enhancing exteriors with captivating aesthetics, our team is dedicated to creating cohesive, inspiring spaces that reflect our clients&apos; visions and elevate the overall design experience.
         </Typography>
         <div>
-          <Button variant="gradient" color="white">
+          <Button placeholder="test" variant="gradient" color="white">
             Book an Appointment today
           </Button>
         </div>

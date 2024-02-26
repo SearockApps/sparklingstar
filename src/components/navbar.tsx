@@ -100,7 +100,7 @@ export function Navbar() {
             <i className="fa-brands fa-instagram text-base" />
           </IconButton>
           <a href="/contact" target="_self">
-            <Button color={isScrolling ? "gray" : "white"} size="sm">
+            <Button placeholder="test" color={isScrolling ? "gray" : "white"} size="sm">
               Book an Appointment
             </Button>
           </a>
@@ -130,17 +130,17 @@ export function Navbar() {
             </NavItem>
           </ul>
           <div className="mt-4 flex gap-2">
-            <IconButton variant="text" color="gray" size="sm">
+            <IconButton placeholder="test" variant="text" color="gray" size="sm">
               <i className="fa-brands fa-twitter text-base" />
             </IconButton>
-            <IconButton variant="text" color="gray" size="sm">
+            <IconButton placeholder="test" variant="text" color="gray" size="sm">
               <i className="fa-brands fa-facebook text-base" />
             </IconButton>
-            <IconButton variant="text" color="gray" size="sm">
+            <IconButton placeholder="test" variant="text" color="gray" size="sm">
               <i className="fa-brands fa-instagram text-base" />
             </IconButton>
             <a href="/contact" target="_self">
-              <Button color="gray" size="sm" className="ml-auto">
+              <Button placeholder="test" color="gray" size="sm" className="ml-auto">
               Book an Appointment
               </Button>
             </a>

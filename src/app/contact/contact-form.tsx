@@ -29,8 +29,8 @@ export function ContactForm() {
         </Typography>
       </div>
       <div>
-        <Card shadow={true} className="container mx-auto border border-gray/50">
-          <CardBody className="grid grid-cols-1 lg:grid-cols-7 md:gap-10">
+        <Card placeholder="test" shadow={true} className="container mx-auto border border-gray/50">
+          <CardBody placeholder="test" className="grid grid-cols-1 lg:grid-cols-7 md:gap-10">
             <div className="w-full col-span-3 h-full py-8 p-5 md:p-16 bg-gray-900">
               <Typography placeholder="test" variant="h4" color="white" className="mb-2">
                 Contact Information
@@ -61,13 +61,13 @@ export function ContactForm() {
                 </Typography>
               </div>
               <div className="flex items-center gap-5">
-                <IconButton variant="text" color="white">
+                <IconButton placeholder="test" variant="text" color="white">
                   <i className="fa-brands fa-facebook text-lg" />
                 </IconButton>
-                <IconButton variant="text" color="white">
+                <IconButton placeholder="test" variant="text" color="white">
                   <i className="fa-brands fa-instagram text-lg" />
                 </IconButton>
-                <IconButton variant="text" color="white">
+                <IconButton placeholder="test" variant="text" color="white">
                   <i className="fa-brands fa-github text-lg" />
                 </IconButton>
               </div>
@@ -142,7 +142,7 @@ export function ContactForm() {
                   }}
                 />
                 <div className="w-full flex justify-end">
-                  <Button className="w-full md:w-fit" color="gray" size="md">
+                  <Button placeholder="test" className="w-full md:w-fit" color="gray" size="md">
                     Send message
                   </Button>
                 </div>

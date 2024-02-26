@@ -38,6 +38,7 @@ export function Resume() {
             websites and web applications.
           </Typography>
           <Button
+            placeholder="test"
             variant="text"
             color="gray"
             className="flex items-center gap-2"
