@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 
 import { Carousel, Typography } from "@material-tailwind/react";
-import { Constants } from "../app/constants";
+import { Constants } from "@/app/Constants";
 
 export function CarouselSlides() {
     return (<section className="px-8 pt-40 pb-20">
