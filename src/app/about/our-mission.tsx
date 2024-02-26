@@ -13,8 +13,8 @@ export function OurMission() {
     <Image
       width={768}
       height={500}
-      src="/reception spa/img-1.jpg"
-      className="h-full max-h-[300px] w-full object-cover scale-100 rounded-xl"
+      src="/reception-spa/img-1.jpg"
+      className="object-cover scale-100 rounded-xl"
       alt="reception spa"
     />
   </div>
