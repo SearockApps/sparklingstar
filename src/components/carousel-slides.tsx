@@ -4,16 +4,18 @@ import Image from "next/image";
 import React from "react";
 
 import { Carousel, Typography } from "@material-tailwind/react";
-import { Constants } from "@/app/Constants";
+import { constants } from "@/app/app-constants";
 
 export function CarouselSlides() {
-    return (<section className="px-8 pt-40 pb-20">
-        <div className="container mx-auto bg-black py-10 lg:px-16">
+  return (
+    <section className="">
+      <div className="container mx-auto bg-black py-10 lg:px-16">
         <Carousel
           placeholder="test"
           transition={{ duration: 1 }}
           nextArrow={() => <></>}
           prevArrow={() => <></>}
+          autoplay={true}
           navigation={({ setActiveIndex, activeIndex, length }) => (
             <div className="absolute left-16 bottom-0 z-50 flex h-5 w-20 -translate-x-2/4 gap-2 md:left-2/4">
               {new Array(length).fill("").map((_, i) => (
@@ -28,13 +30,14 @@ export function CarouselSlides() {
             </div>
           )}
         >
-          { Constants.testmonials.map((item, i) => (
+          {constants.testmonials.map((item, i) => (
             <div
               key={i}
               className="!relative flex grid-cols-1 flex-col-reverse gap-6 px-10 py-14 md:grid md:grid-cols-5  md:gap-14 md:py-20"
             >
               <div className="col-span-3 flex flex-col items-start justify-center">
-                <Typography placeholder="test"
+                <Typography
+                  placeholder="test"
                   variant="lead"
                   color="white"
                   className="mb-5 text-xl font-normal "
@@ -42,14 +45,15 @@ export function CarouselSlides() {
                   {item.title} <br />
                   {item.description}
                 </Typography>
-                <Typography placeholder="test"
+                <Typography
+                  placeholder="test"
                   variant="small"
                   color="white"
                   className="font-medium uppercase"
                 >
                   {item.name},{" "}
                   <span className="font-normal opacity-60">
-                  {item.position} @ {item.company}.
+                    {item.position} @ {item.company}.
                   </span>
                 </Typography>
               </div>
@@ -65,6 +69,7 @@ export function CarouselSlides() {
             </div>
           ))}
         </Carousel>
-    </div>
-    </section>)
+      </div>
+    </section>
+  );
 }

@@ -1,1 +1,1 @@
-# Done waste your time here!
+# Dont waste your time here!

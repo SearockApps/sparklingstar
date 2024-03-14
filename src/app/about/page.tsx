@@ -1,11 +1,11 @@
 // components
-import { Navbar, Footer } from "@/components";
+import { Navbar, Footer } from "@/app/common";
 
 // sections
 import OurMission from "./our-mission";
 import OurVision from "./our-vision";
-import SmallHero from "./small-hero";
-import OurStory from "../home/our-story";
+import SmallHero from "../example/small-hero";
+import OurStory from "./our-story";
 
 export default function About() {
   return (

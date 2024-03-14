@@ -3,17 +3,23 @@
 import React from "react";
 import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
-import { Constants } from "../Constants";
+import { constants } from "../app-constants";
 
 export function HeroText() {
   return (
     <section id="about" className="py-28 px-8">
       <div className="container mx-auto grid grid-cols-1 place-items-center lg:grid-cols-3">
         <div className="col-span-2 lg:pl-24">
-          <Typography placeholder="test" variant="h1" color="blue-gray" className="mb-4">
+          <Typography
+            placeholder="test"
+            variant="h1"
+            color="blue-gray"
+            className="mb-4"
+          >
             Welcome to Sparkling Star
           </Typography>
-          <Typography placeholder="test"
+          <Typography
+            placeholder="test"
             variant="lead"
             className="mb-5 max-w-lg px-4 text-left text-lg !text-gray-500 lg:px-0  "
           >

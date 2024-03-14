@@ -1,21 +1,22 @@
 // components
-import { Navbar, Footer } from "@/components";
+import { Navbar, Footer } from "@/app/common";
 
 // sections
-import Hero from "./home/hero";
-import ContactForm from "./contact/contact-form";
-import HeroText from "./home/hero-text";
-import OurApproach from "./home/our-approach";
-import OurStory from "./home/our-story";
 import { CarouselSlides } from "@/components/carousel-slides";
+import { VideoComponent } from "@/components/video-component";
+import WhyChooseUs from "./home/why-choose-us";
+import OurProcess from "./home/our-process";
+import Hero from "./home/hero";
 
 export default function Portfolio() {
   return (
     <>
       <Navbar />
       <Hero />
-      <OurApproach />
       <CarouselSlides />
+      <WhyChooseUs />
+      <VideoComponent videosrc="https://giistyxelor.s3.amazonaws.com/giists/video/video0cP3w019TiZYYcUy22WY.mp4" />
+      <OurProcess />
       <Footer />
     </>
   );

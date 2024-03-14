@@ -2,17 +2,22 @@
 
 import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
-import { Constants } from "../Constants";
+import { constants } from "../app-constants";
 
 export function Clients() {
   return (
     <section className="px-8 py-28">
       <div className="container mx-auto text-center">
-        <Typography placeholder="test" variant="h6" color="blue-gray" className="mb-8">
+        <Typography
+          placeholder="test"
+          variant="h6"
+          color="blue-gray"
+          className="mb-8"
+        >
           Our clients
         </Typography>
         <div className="flex flex-wrap items-center justify-center gap-6">
-          {Constants.clients.map((logo, key) => (
+          {constants.clients.map((logo, key) => (
             <Image
               key={key}
               alt={logo}
